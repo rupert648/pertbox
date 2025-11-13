@@ -7,18 +7,6 @@ pages:
       - size: small
         widgets:
           - type: calendar
-          - type: group
-            widgets:
-                # Rugby Standings Extension
-              - type: extension
-                url: http://localhost:3000
-                allow-potentially-dangerous-html: true
-                cache: 15m
-                # F1 Extension
-              - type: extension
-                url: http://localhost:3001
-                allow-potentially-dangerous-html: true
-                cache: 15m
           - type: repository
             repository: cloudflare/cloudflare-docs
             pull-requests-limit: 5
@@ -56,12 +44,15 @@ pages:
               - UCRcgy6GzDeccI7dkbbBna3Q # Lemmino
               - UC_hzV1UIVP1yKmU_kVN3tFQ # SourSweet
 
-
       - size: small
         widgets:
           - type: weather
             location: London, United Kingdom
 
+  - name: Services
+    columns:
+      - size: full
+        widgets:
           - type: monitor
             cache: 1m
             title: Services
@@ -74,3 +65,9 @@ pages:
                 url: https://willdolater.dev
               - title: reqbin.zip
                 url: https://reqbin.zip
+              - title: minecraft-status
+                url: https://mc.pert.dev
+              - title: timezone-fuckery
+                url: https://tz.pert.dev
+              - title: hoarder
+                url: https://hoarder.pert.dev
